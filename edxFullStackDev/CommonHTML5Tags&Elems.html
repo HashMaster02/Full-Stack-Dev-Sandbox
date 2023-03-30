@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Common HTML5 Tags and Elements</title>
+    </head>
+
+    <body>
+        <h2>Non HTML5 Specific Tags</h2>
+        
+        <h3>Comments</h3>
+        <p>Comments can be added using the '<!-- -->' comment tag (see code) tag</p>
+        <!-- This is a comment -->
+
+        <h3>div</h3>
+        <p>The 'div' tag is used to group content together. The content doesn't need to be semantically related. These are commonly used when elements are required to have the same format. Grouping them can allow the developer to style them using a specific class or id name. Browsers will insert a line break before and after a div element.</p>
+        <div>
+            <h4>This heading is inside a div tag</h4>
+            <p>So is this sentence</p>
+        </div>
+
+        <h2>Structural HTML5 Elements</h2>
+
+        <h3>section</h3>
+        <p>The 'section' tag is used to group content that is semantically meaningful. The content is grouped for purposes other than styling, commonly because it has a common theme (usually indicated by a heading tag after the section tag).</p>
+        <section>
+            <h4>Section 1</h4>
+            <p>Content related to Section 1</p>
+        </section>
+
+        <section>
+            <h4>Section 2</h4>
+            <p>Content related to Section 2</p>
+        </section>
+
+        <h3>article</h3>
+        <p>The 'article' tag is more specific than the 'section' tag. It is used to group content that is meaningful on its own (self contained). These too have heading tags immediately after the opening tag that define what the article is about.</p>
+        <article>
+            <h4>Article 1</h4>
+            <p>This paragraph is related only to article one and is meaningful on its own, without the rest of the code.</p>
+        </article>
+        <article>
+            <h4>Article 2</h4>
+            <p>This paragraph is related only to article two and is meaningful on its own, without the rest of the code.</p>
+        </article>
+
+        <h3>header and footer</h3>
+        <p>The 'header' tag defines the introductory information of a page. It can be used for a navigational bar, or to wrap a table of contents. The 'footer' tag defines the area at the bottom of a page, often containing copyright info and contact links.<br> A page can have more than one header, but it cannot be places within 'address', 'footer' or other 'header' elements.</p>
+
+        <h2>HTML5 Elements for Grouping</h2>
+        <h3>asside</h3>
+        <p>The 'aside' tag is used to provide additional information about the main content without distracting from the main discussion. It is often placed as a sidebar.<br>The tag doesn't diplay your content any differently, but is used for understanding HTML code and styling purposes.</p>
+
+        <aside>This content is inside an 'aside' tag</aside>
+
+        <h3>figure and figcaption</h3>
+        <p>The 'figure' tag is used to define self-contained images or diagrams that is referred to by the main content. The content within the tag should be related to the main content, but still independant in such a way that if removed from the document, it would not affect the flow.<br>The 'figcaptin' tag can be used as a caption inside the 'figure' tag.</p>
+        <figure>
+            <img src="https://media.istockphoto.com/id/1346249990/photo/one-ginger-cat.jpg?b=1&s=170667a&w=0&k=20&c=J4PNHGfyn2Tr1mCn8UTGtuyyXc11gBMELowi1uDHaDk=" alt="a ginger cat">
+            <figcaption>This is a ginger cat</figcaption>
+        </figure>
+
+        <h2>Navigational Elements</h2>
+
+        <h3>nav</h3>
+        <p>The 'nav' tag can be used to group navigational elements used to move between pages, such as menu bars at the top of websites. It is a convenience tag that doesn't alter the look of the page, but is instead used for styling purposes.</p>
+
+        <h2>(Some) Additional HTML5 Elements</h2>
+        <h3>audio</h3>
+        <p>The 'audio' tag is used to embed sound content, such as podcasts and music. It contains multiple 'source' tags with different audio sources, so your browser can choose the first source that is supported. If none are supported, the text within the tag will be shown instead.</p>
+        <audio>
+            <source src="soundtrack.mp3" type="audio/mpeg">
+            <source src="soundtrack.ogg" type="audio/ogg">
+            Your browser does not support the audio formats provided.
+        </audio>
+
+        <h3>canvas</h3>
+        <p>The 'canvas' tag is used to graphics via scripting (such as with a language like Javascript).</p>
+        <canvas>
+            Your browser does not support the canvas tag.
+        </canvas>
+        <script>
+            var canvas = document.getElementsByTagName("canvas")[0];
+            var context = canvas.getContext("2d");
+            context.fillRect(0, 0, 100, 100);
+        </script>
+
+        <h3>embed</h3>
+        <p>The 'embed' tag is used as a container to embed external resources such as media players and plug-in applications into your web page.</p>
+
+        <h3>track</h3>
+        <p>The 'track' tag defines text tracks, such as subtitles or captions, for 'audio' and 'video' tags. This text should be visible as the related media source it playing, and are formatted in the WebVTT (.vtt) format.</p>
+        
+
+
+    </body>
+</html>
