@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+body {
+    background-image: url('../starter code/images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    background-color: white;
+    width: 450px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 3px 40px rgb(0 0 0 / 0.1);
+}
+
+.hero {
+    width: 100%;
+    height: 30%;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+}
+
+.order-summary {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.order-summary h1 {
+    font-size: 1.75rem;
+    font-weight: 900;
+    padding-bottom: 16px;
+}
+
+.welcome-text-box {
+    width: 70%;
+    height: auto;
+    font-size: 0.80rem;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.upgrade {
+    background-color: var(--very-pale-blue);
+    position: relative;
+    width: 90%;
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upgrade-info {
+    position: absolute;
+    margin-left: 65px;
+}
+
+.plan-title, .plan-price {
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+.plan-title {
+    font-weight: 900;
+}
+
+.plan-price {
+    color: var(--desaturated-blue);
+    font-weight: 700;
+}
+
+.upgrade-plan-btn {
+    background: none;
+    border-style: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--bright-blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.payment-btn {
+    cursor: pointer;
+    background: none;
+    border-style: none;
+    background-color: var(--bright-blue);
+    color: white;
+    width: 90%;
+    padding: 15px 20px;
+    margin: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0px 15px 10px var(--pale-blue);
+}
+
+.cancel-btn {
+    cursor: pointer;
+    background: none;
+    border-style: none;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.upgrade-plan-btn:hover {
+    text-decoration: none;
+    opacity: 80%;
+}
+
+.payment-btn:hover {
+    opacity: 80%;
+}
+
+.cancel-btn:hover {
+    color: black;
+    opacity: 80%;
+}
