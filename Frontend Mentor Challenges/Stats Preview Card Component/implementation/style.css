@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+--main-background: hsl(233, 47%, 7%);
+--card-background: hsl(244, 38%, 16%);
+--accent: hsl(277, 64%, 61%);
+--main-paragraph: hsla(0, 0%, 100%, 0.75);
+--stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    background-color: var(--main-background);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 1100px;
+    height: 450px;
+    background-color: var(--card-background);
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-container {
+    position: absolute;
+    width: 540px;
+    height: 100%;
+    background-color: hsla(233, 47%, 7%);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background: url('../starter code/images/image-header-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent);
+    filter: opacity(0.4) saturate(70) brightness(0.6);
+}
+
+.main {
+    position: relative;
+    padding: 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-body {
+    width: 100%;
+    height: 100%;
+}
+
+.text-body h2, .insight{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.75px;
+    margin-bottom: 28px;
+}
+
+.insight {
+    color: var(--accent);
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--main-paragraph);
+    letter-spacing: 0.75px;
+}
+
+.stats-block {
+    display: flex;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.stat span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    letter-spacing: 0.7px;
+}
+
+.stat small {
+    color: var(--stat-headings);
+    font-size: 8px;
+    font-family: 'Lexend', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
