@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--very-light-gray);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 920px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.card-component {
+    width: 33.33%;
+    position: relative;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-icon {
+    width: 30%;
+    height: auto;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+p {
+    color: var(--paragraphs);
+    font-size: small;
+    margin-top: 30px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+button {
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    background: var(--very-light-gray);
+    border: none;
+    padding: 14px 30px;
+    border-radius: 60px;
+    font-family: inherit;
+    font-size: small;
+}
+
+#sedans {
+    background-color: var(--bright-orange);
+}
+
+#sedans button {
+    color: var(--bright-orange);
+}
+
+#suvs {
+    background-color: var(--dark-cyan);
+}
+
+#suvs button {
+    color: var(--dark-cyan);
+}
+
+#luxury {
+    background-color: var(--very-dark-cyan);
+}
+
+#luxury button {
+    color: var(--very-dark-cyan);
+}
+
+#sedans button:hover {
+    color: #fff;
+    outline: 2px solid #fff;
+    background: transparent;
+}
+
+#suvs button:hover {
+    color: #fff;
+    outline: 2px solid #fff;
+    background: transparent;
+}
+
+#luxury button:hover {
+    color: #fff;
+    outline: 2px solid #fff;
+    background: transparent;
+}
