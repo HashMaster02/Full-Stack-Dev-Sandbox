@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --desat-tomato: hsl(4, 50%, 67%);
+    --error: hsl(4, 100%, 95%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    max-width: 100%;
+    font: inherit;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--dark-slate-grey);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter,
+.thankyou {
+    max-width: 25rem;
+}
+
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem 0;
+}
+
+.graphic {
+    max-width: 100%;
+}
+
+.graphic img {
+    width: 100%;
+}
+
+.text {
+    padding: 1.25rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.text-thankyou {
+    margin-top: 6rem;
+    display: grid;
+    gap: 1.2rem;
+}
+
+.text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.subtext span {
+    font-weight: 700;
+    color: var(--dark-slate-grey);
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    /* outline: auto; */
+    background: url("../starter code/assets/images/icon-list.svg") no-repeat left top;
+    padding: 0 0 0.8rem 2rem;
+    list-style: none;
+}
+
+ul li:last-child {
+    padding-bottom: 0;
+}
+
+.sign-up-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 0;
+}
+.sign-up-block label {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.email-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#email-box,
+.btn {
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#email-box {
+    border: 1px solid var(--grey);
+}
+
+#email-box.invalid {
+    border-color: var(--tomato);
+    background-color: var(--error);
+}
+
+#email-box.invalid::placeholder {
+    color: var(--tomato);
+}
+
+#email-box:hover {
+    cursor: pointer;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    color: var(--white);
+    background-color: var(--dark-slate-grey);
+    font-weight: 700;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-image: linear-gradient( to right, var(--desat-tomato), var(--tomato)) ;
+}
+
+#dismiss-btn {
+    margin: 0 1.25rem;
+}
+
+.thankyou.hide,
+.newsletter.hide {
+    display: none;
+}
+
+
+@media (min-width: 56rem) {
+    body {
+        background-color: var(--dark-slate-grey);
+    }
+
+    .newsletter,
+    .thankyou {
+        background-color: var(--white);
+        max-width: 900px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        gap: 0 0.5rem;
+        align-self: center;
+        border-radius: 20px;
+        padding: 1rem;
+        box-shadow: 0 15px 20px rgba(0, 0, 1, 0.3);
+    }
+
+    .thankyou {
+        max-width: 400px;
+        align-content: space-between;
+        padding-bottom: 3rem;
+    }
+
+    .text-thankyou {
+        margin-top: 0;
+    }
+
+    .checkmark {
+        margin-bottom: 0.5rem;
+    }
+    
+    .subtext {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .graphic {
+        order: 1;
+        overflow: hidden;
+    }
+
+    .text-thankyou img {
+        max-width: 100%;
+    }
+
+    .text {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .text h1 {
+        font-size: 3rem;
+    }
+}
+

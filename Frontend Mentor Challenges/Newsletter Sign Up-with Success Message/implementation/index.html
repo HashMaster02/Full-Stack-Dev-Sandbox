@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="newsletter">
+
+    <div class="graphic">
+      <img src="../starter code/assets/images/illustration-sign-up-mobile.svg" alt="image">
+    </div>
+
+    <section class="text">
+      <h1>Stay updated!</h1>
+      <p class="subtext">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="services">
+        <li class="service">Product discovery and building what matters</li>
+        <li class="service">Measuring to ensure updates are a success</li>
+        <li class="service">And much more!</li>
+      </ul>
+
+      <div class="sign-up-block">
+        <div class="email-box">
+          <label for="email">Email address</label>
+          <input type="text" name="email" id="email-box" class="" placeholder="email@company.com">
+        </div>
+        <button class="btn" id="subscribe-btn">Subscribe to monthly newsletter</button>
+      </div>
+    </section>
+
+  </main>
+
+  <main class="thankyou hide">
+
+    <div class="text text-thankyou">
+      <div class="checkmark">
+        <img src="../starter code/assets/images/icon-success.svg" alt="check">
+      </div>
+
+      <h1>Thanks for subscribing!</h1>
+
+      <p class="subtext">
+        A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
+
+    <button class="btn" id="dismiss-btn">
+      Dismiss message
+    </button>
+
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
